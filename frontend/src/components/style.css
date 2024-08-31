@@ -1,0 +1,73 @@
+/* Shared styles for background images */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure body takes full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.login-page, .signup-page {
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    position: absolute; /* Position the container absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    z-index: 1; /* Ensure it's on top */
+}
+
+.login-page {
+    background-image: url('../assets/signup.jpg'); /* Path to your login page background image */
+}
+
+.signup-page {
+    background-image: url('../assets/signup.jpg'); /* Path to your signup page background image */
+}
+
+form {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for form */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Make form responsive */
+    max-width: 400px; /* Limit form width */
+    z-index: 2; /* Ensure form is above the background image */
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: rgb(46, 45, 45);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
