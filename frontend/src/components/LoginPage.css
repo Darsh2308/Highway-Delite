@@ -20,7 +20,7 @@ body {
     align-items: center;
     color: #ffffff;
     text-align: center;
-    background-image: url('../assets/login.jpg') !important; /* Path to your login page background image */
+    background-image: url('../assets/signup.jpg') !important; /* Path to your login page background image */
 }
 
 form {
